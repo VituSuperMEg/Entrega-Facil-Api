@@ -48,7 +48,7 @@ model Products {
 model Shipment {
   id Int @id @default(autoincrement())
   product Products? @relation(fields: [product_id], references: [id])
-  product_id Int?
+  product_id Int
   codigo String
   origem String
   destino String
